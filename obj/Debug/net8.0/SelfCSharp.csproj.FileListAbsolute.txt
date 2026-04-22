@@ -1,0 +1,14 @@
+C:\data\SelfCSharp\bin\Debug\net8.0\SelfCSharp.exe
+C:\data\SelfCSharp\bin\Debug\net8.0\SelfCSharp.deps.json
+C:\data\SelfCSharp\bin\Debug\net8.0\SelfCSharp.runtimeconfig.json
+C:\data\SelfCSharp\bin\Debug\net8.0\SelfCSharp.dll
+C:\data\SelfCSharp\bin\Debug\net8.0\SelfCSharp.pdb
+C:\data\SelfCSharp\obj\Debug\net8.0\SelfCSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\data\SelfCSharp\obj\Debug\net8.0\SelfCSharp.AssemblyInfoInputs.cache
+C:\data\SelfCSharp\obj\Debug\net8.0\SelfCSharp.AssemblyInfo.cs
+C:\data\SelfCSharp\obj\Debug\net8.0\SelfCSharp.csproj.CoreCompileInputs.cache
+C:\data\SelfCSharp\obj\Debug\net8.0\SelfCSharp.dll
+C:\data\SelfCSharp\obj\Debug\net8.0\refint\SelfCSharp.dll
+C:\data\SelfCSharp\obj\Debug\net8.0\SelfCSharp.pdb
+C:\data\SelfCSharp\obj\Debug\net8.0\SelfCSharp.genruntimeconfig.cache
+C:\data\SelfCSharp\obj\Debug\net8.0\ref\SelfCSharp.dll
