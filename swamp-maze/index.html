@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>泥沼迷路 - Swamp Maze</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container" id="gameContainer">
+        <!-- JSで生成される迷路のパスが入るコンテナ -->
+        <div id="mazeContainer"></div>
+        
+        <!-- スタートとゴール -->
+        <div class="start-area" id="startArea">START</div>
+        <div class="goal-area" id="goalArea">GOAL</div>
+
+        <!-- カスタムカーソル -->
+        <div id="customCursor" class="custom-cursor"></div>
+    </div>
+
+    <!-- UIオーバーレイ（開始・終了画面） -->
+    <div id="overlay" class="overlay">
+        <h1 id="overlayMessage">泥沼迷路</h1>
+        <div style="text-align: left; max-width: 500px; margin-bottom: 20px;">
+            <p><strong>ルール：</strong><br>
+            「ゲームスタート」を押した後、<strong>STARTエリアにマウスを乗せると迷路開始</strong>です。<br>
+            壁（緑色の背景）に触れないようにGOALを目指してください。</p>
+            <p><strong>ギミック：</strong>色の違うエリアに入ると、カーソルの動きの重さ（スピード）が変化します！</p>
+            <ul>
+                <li>⬜ 白：通常の道（少し重め）</li>
+                <li>🧊 水色：氷の道（速い！）</li>
+                <li>🟫 薄茶：浅い泥（重い）</li>
+                <li>🟫 濃茶：深い泥（かなり重い！）</li>
+            </ul>
+        </div>
+        <button id="startButton">ゲームスタート</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

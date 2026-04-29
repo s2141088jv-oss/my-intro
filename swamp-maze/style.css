@@ -1,0 +1,137 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2c3e50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    overflow: hidden;
+}
+
+.game-container {
+    width: 800px;
+    height: 600px;
+    background-color: #27ae60;
+    position: relative;
+    border: 8px solid #34495e;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    cursor: none;
+    overflow: hidden;
+}
+
+#mazeContainer {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+}
+
+.path {
+    position: absolute;
+}
+
+/* 様々なスピードの道のデザイン */
+.path.safe { 
+    background-color: #ecf0f1; 
+}
+.path.safe-fast { 
+    background-color: #81ecec; /* 氷をイメージ */
+}
+.path.swamp-light { 
+    background-color: #d7ccc8;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(0,0,0,0.05) 10px, rgba(0,0,0,0.05) 20px);
+}
+.path.swamp-med { 
+    background-color: #a1887f;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(0,0,0,0.1) 10px, rgba(0,0,0,0.1) 20px);
+}
+.path.swamp-heavy { 
+    background-color: #5d4037;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(0,0,0,0.2) 10px, rgba(0,0,0,0.2) 20px);
+}
+
+.start-area, .goal-area {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    z-index: 10;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.start-area {
+    background-color: #3498db;
+    color: white;
+    width: 80px;
+    height: 50px;
+}
+
+.goal-area {
+    background-color: #f1c40f;
+    color: #333;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* ゴールを丸くする */
+}
+
+.custom-cursor {
+    width: 20px;
+    height: 20px;
+    background-color: #e74c3c;
+    border: 3px solid white;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 100;
+    display: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+}
+
+.overlay h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #f1c40f;
+}
+
+.overlay ul {
+    list-style: none;
+    padding: 0;
+}
+.overlay li {
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #c0392b;
+}
